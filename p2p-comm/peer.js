@@ -100,7 +100,7 @@ rl.on("line", async (line) => {
   const localIp = await getLocalIP();
 
   if (line.startsWith("/connect ")) {
-    const [host, port] = line.split(9).split(":");
+    const [host, port] = line.slice(9).split(":");
     connectToPeer(host, parseInt(port, 10));
   } else if (line === "/peers") {
     console.log(
