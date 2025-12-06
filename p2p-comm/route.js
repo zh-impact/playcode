@@ -4,7 +4,7 @@ const PROBE_PORT = 53;
 const PROBE_IP = "1.1.1.1";
 const NO_ROUTE_IP = "0.0.0.0";
 
-const probeDefaultRoute = () => {
+export const probeDefaultRoute = () => {
   return new Promise((resolve, reject) => {
     const socket = createSocket({ type: "udp4", reuseAddr: true });
     socket.on("error", (err) => {
