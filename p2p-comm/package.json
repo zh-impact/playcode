@@ -1,0 +1,17 @@
+{
+  "name": "p2p-comm",
+  "version": "0.1.0",
+  "description": "Peer-to-Peer Communication",
+  "author": "Zed.Hertz",
+  "license": "MIT",
+  "keywords": [
+    "P2P",
+    "Network",
+    "Communication"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
